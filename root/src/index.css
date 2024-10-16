@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+.header {
+  padding: 10px;
+  background-color: rgb(236, 236, 236);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  animation: forwards unhover 0.5s;
+}
+
+.header:hover {
+  animation: forwards hover 0.5s;
+}
+
+.header > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+ul > li {
+  margin: 5px 15px;
+}
+
+li > button {
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button > a, li > button {
+  color: black;
+  text-decoration: none;
+}
+
+li > button:hover {
+  cursor: pointer;
+  background-color: rgb(182, 182, 182);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+
+@keyframes hover {
+  0% {
+    transform: translateY(0px)
+  }
+  100% {
+    transform: translateY(-5px)
+  }
+}
+
+@keyframes unhover {
+  0% {
+    transform: translateY(-5px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}

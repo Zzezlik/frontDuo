@@ -1,0 +1,30 @@
+* {
+    margin: auto;
+}
+#panel {
+    list-style: none;
+    float: left;
+    padding: 50px 50px  500px 100px;
+    border: silver solid 3px;
+    border-radius: 20px;
+    background: white;
+
+}
+#panel ul li {
+    float: left;
+    background-color: white;
+    border: silver solid 1px;
+    border-radius: 5px;
+    display: block;
+margin-right: 250px;
+ 
+
+
+
+}
+#panel ul li:hover {
+    cursor: pointer;
+    background: black;
+
+}
+
